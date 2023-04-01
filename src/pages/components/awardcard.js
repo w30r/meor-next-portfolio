@@ -8,11 +8,11 @@ const AwardCard = () => (
         <h3 className="text-xl text-white font-medium">
           UTP DSC Hackaton 2021
         </h3>
-        <p className="text-gray-200 my-2 leading-none">
+        {/* <p className="text-gray-200 my-2 leading-none">
           By introducing the notion of an all-in-one application for students,
           We was able to participate in and win 2nd Runner Up in the first ever
           hackathon competition hosted by UTP's Developer Student Club
-        </p>
+        </p> */}
       </div>
     </div>
   </div>

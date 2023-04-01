@@ -33,12 +33,13 @@ export default function Kereta() {
   return (
     <div className="grid grid-cols-1 justify-items-center">
       <h1 className="text-6xl p-12 text-teal-700 font-semibold">Kereta</h1>
-      <a
+      {/* <a
         className="bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500 bg-gradient-to-tl from-teal-700 to-blue-700 px-2  rounded-md mb-8"
         href="/"
+        rel="noreferrer"
       >
         Back
-      </a>
+      </a> */}
       <a
         className="bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500 bg-gradient-to-tl from-teal-700 to-blue-700 px-4 py-2 rounded-md mb-8"
         onClick={() => alert("yeah")}
