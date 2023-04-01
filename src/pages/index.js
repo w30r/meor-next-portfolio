@@ -1,6 +1,4 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-import { AiFillThunderbolt } from "react-icons/ai";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -11,6 +9,9 @@ import Image from "next/image";
 import Card from "./components/card";
 import AwardCard from "./components/awardcard";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { TypeAnimation } from "react-type-animation";
+import { SocialIcon } from "react-social-icons";
 
 export default function Home() {
   return (
@@ -32,38 +33,78 @@ export default function Home() {
           </Head>
           <main className=" bg-black px-10">
             <section className="min-h-screen">
-              <nav className="py-10 mb-12 flex justify-between">
-                <h1 className="text-xl p-10 font-burtons">developedbymeor</h1>
+              <nav className="py-4 mb-12 flex justify-between">
+                <motion.h1
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1.5 }}
+                  className="text-xl p-10 "
+                >
+                  developedbymeor
+                </motion.h1>
                 <ul className="flex items-center">
-                  <li>
-                    <AiFillThunderbolt className=" cursor-pointer text-2xl" />
+                  <li className="px-1">
+                    <SocialIcon
+                      url="https://twitter.com/MeorSyamil"
+                      bgColor="transparent"
+                      fgColor="grey"
+                    />
                   </li>
                   <li className="px-1">
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      onHoverStart={(e) => {}}
-                      onHoverEnd={(e) => {}}
-                    >
-                      <a
-                        className="bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500 bg-gradient-to-tl from-blue-500 to-teal-500 px-4 py-2 rounded-md "
-                        href="/README.md"
-                      >
-                        Resume
-                      </a>
-                    </motion.div>
+                    <SocialIcon
+                      url="https://www.facebook.com/meor.syamil/"
+                      bgColor="transparent"
+                      fgColor="grey"
+                    />
+                  </li>
+                  <li className="px-1">
+                    <SocialIcon
+                      url="https://www.linkedin.com/in/meor-syamil-59935a153/"
+                      bgColor="transparent"
+                      fgColor="grey"
+                    />
+                  </li>
+                  <li className="px-1">
+                    <SocialIcon
+                      url="https://github.com/w30r"
+                      bgColor="transparent"
+                      fgColor="grey"
+                    />
                   </li>
                 </ul>
               </nav>
               <div className="text-center flex items-center flex-col ">
+                <motion.div
+                  initial={{ scale: 1.1 }}
+                  animate={{ scale: 1 }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
+                  className="mb-12 relative bg-gradient-to-b via-cyan-900 from-teal-600 to-black rounded-full w-60 h-60 mx-auto overflow-hidden transition-all duration-500 ease-out "
+                >
+                  <Image src={pfp} />
+                </motion.div>
                 <motion.h1
                   initial={{ opacity: 0, y: -10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                   viewport={{ once: false }}
                 >
-                  <h2 className="text-6xl py-6 text-teal-500 font-semibold">
-                    Meor Syamil
-                  </h2>
+                  <motion.h1 className="text-6xl p-6 text-teal-500">
+                    <TypeAnimation
+                      sequence={[
+                        "Meor :)", // Types 'One'
+                        1000, // Waits 1s
+                        "Syamil!", // Deletes 'One' and types 'Two'
+                        1000, // Waits 2s
+                        "Meor Syamil.", // Types 'Three' without deleting 'Two'
+                        3000,
+                      ]}
+                      repeat={Infinity}
+                    />
+                  </motion.h1>
                 </motion.h1>
                 <h3 className="text-lg font-medium py-4 leading-none">
                   Computer Engineer Graduate + Future Developer/Designer
@@ -92,20 +133,18 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <div className="text-5xl flex justify-center py-6 gap-6 ">
-                  <AiFillTwitterCircle />
-                  <AiFillGithub />
-                  <AiFillLinkedin />
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ x: -30, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="mb-24 relative bg-gradient-to-b via-cyan-900 from-teal-600 to-black rounded-full w-60 h-60 mt-12 mx-auto overflow-hidden transition-all duration-500 ease-out ">
-                  <Image src={pfp} />
+                  <a target="_blank" href="https://github.com/w30r">
+                    <AiFillGithub />
+                  </a>
+                  <a target="_blank" href="https://twitter.com/fathihilmi_">
+                    <AiFillTwitterCircle />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/meor-syamil-59935a153/"
+                  >
+                    <AiFillLinkedin />
+                  </a>
                 </div>
               </motion.div>
             </section>

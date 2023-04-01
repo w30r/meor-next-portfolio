@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import wdicon from "public/webdevicon.png";
 import { motion } from "framer-motion";
 
 const Card = () => (

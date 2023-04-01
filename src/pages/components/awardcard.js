@@ -1,4 +1,5 @@
 import React from "react";
+import { SocialIcon } from "react-social-icons";
 
 const AwardCard = () => (
   <div className="grid grid-cols-2 justify-items-center">
