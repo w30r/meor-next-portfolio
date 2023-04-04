@@ -6,7 +6,7 @@ export default function Kereta() {
   const [data, setData] = useState("");
   const fetchData = () => {
     axios
-      .get("http://localhost:8000/kereta")
+      .get("https://cobanest-production.up.railway.app")
       .then((response) => {
         setData(response.data);
       })
