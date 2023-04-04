@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
-import TealCircle from "./tealcircle";
 
 export default function Kereta() {
   const [data, setData] = useState("");
