@@ -33,15 +33,13 @@ export default function Home() {
           </Head>
           <main className=" bg-black px-10">
             <section className="min-h-screen">
-              <nav className="py-4 mb-12 flex justify-between">
-                <motion.h1
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1.5 }}
-                  className="text-xl p-10 "
-                >
-                  developedbymeor
-                </motion.h1>
+              <motion.nav
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5 }}
+                className="bg-gradient-to-b via-black from-black to-transparent mb-2 border-gray-300 rounded-lg flex w-full  justify-around top-0 left-0 fixed z-10"
+              >
+                <h1 className="text-xl p-10 text-gray-400">developedbymeor</h1>
                 <ul className="flex items-center">
                   <li className="px-1">
                     <SocialIcon
@@ -72,8 +70,8 @@ export default function Home() {
                     />
                   </li>
                 </ul>
-              </nav>
-              <div className="text-center flex items-center flex-col ">
+              </motion.nav>
+              <div className="text-center flex items-center flex-col mt-36">
                 <motion.div
                   initial={{ scale: 1.1 }}
                   animate={{ scale: 1 }}
