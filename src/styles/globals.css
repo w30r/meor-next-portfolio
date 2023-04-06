@@ -114,3 +114,10 @@ a {
     color-scheme: dark;
   }
 }
+
+.trail {
+  transition: transform 0.5s ease-out;
+}
+.traill {
+  transition: transform 0.8s ease-out;
+}
