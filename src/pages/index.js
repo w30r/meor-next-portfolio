@@ -1,11 +1,4 @@
 import Head from "next/head";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillGithub,
-} from "react-icons/ai";
-import Card from "./components/card";
-import AwardCard from "./components/awardcard";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import TopBar from "./components/TopBar";
@@ -60,45 +53,6 @@ export default function Home() {
               <Skills />
             </div>
           </section>
-
-          {/* <section>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: false }}
-            >
-              <div>
-                <div className="whitespace-no-wrap">
-                  <h3 className="text-center text-3xl py-1 font-semibold my-4">
-                    My Experiences 🛠
-                  </h3>
-                </div>
-                <div>
-                  <Card />
-                </div>
-              </div>
-            </motion.div>
-          </section> */}
-
-          {/* <section>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: false }}
-            >
-              <div className="whitespace-no-wrap">
-                <h3 className="text-center text-3xl py-1 font-semibold my-4">
-                  Award(s) + Achievements 🥇
-                </h3>
-              </div>
-
-              <div>
-                <AwardCard />
-              </div>
-            </motion.div>
-          </section> */}
         </main>
       </html>
 

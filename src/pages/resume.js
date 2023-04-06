@@ -41,7 +41,7 @@ export default function Kereta() {
         <div>
           <table className="table-auto bg-black outline-dashed outline-2 outline-offset-2 rounded-3xl">
             <thead>
-              <tr class="text-teal-400">
+              <tr className="text-teal-400">
                 <th className="p-4">Name</th>
                 <th className="p-4">Phone Number</th>
                 <th className="p-4"> QRID</th>
@@ -57,7 +57,6 @@ export default function Kereta() {
                   <td className="text-center">{item.Phone}</td>
                   <td className="text-center">{item.QRID}</td>
                   <td className="text-center">{item.TotalCollected}</td>
-                  {/* <td>{item.email}</td> */}
                 </tr>
               ))}
             </tbody>
