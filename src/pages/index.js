@@ -5,6 +5,8 @@ import TopBar from "./components/TopBar";
 import ProfilePic from "./components/ProfilePic";
 import Intro from "./components/Intro";
 import Skills from "./components/Skills";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -27,24 +29,23 @@ export default function Home() {
             <div className="text-center flex items-center flex-col mt-6">
               <h1 className="text-xs md:text-lg">My name is</h1>
               <motion.h1
+                className="text-teal-500 md:text-6xl text-4xl"
                 initial={{ opacity: 0, y: -10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: false }}
               >
-                <motion.h1 className="text-teal-500 md:text-6xl text-4xl">
-                  <TypeAnimation
-                    sequence={[
-                      "Meor :)", // Types 'One'
-                      1000, // Waits 1s
-                      "Syamil!", // Deletes 'One' and types 'Two'
-                      1000, // Waits 2s
-                      "Meor Syamil.", // Types 'Three' without deleting 'Two'
-                      3000,
-                    ]}
-                    repeat={Infinity}
-                  />
-                </motion.h1>
+                <TypeAnimation
+                  sequence={[
+                    "Meor :)", // Types 'One'
+                    1000, // Waits 1s
+                    "Syamil!", // Deletes 'One' and types 'Two'
+                    1000, // Waits 2s
+                    "Meor Syamil.", // Types 'Three' without deleting 'Two'
+                    3000,
+                  ]}
+                  repeat={Infinity}
+                />
               </motion.h1>
               <h3 className="md:text-lg text-sm font-medium py-4 leading-none md:leading-none">
                 Computer Engineer Graduate <p>Future Developer/Designer</p>
@@ -56,41 +57,8 @@ export default function Home() {
         </main>
       </html>
 
-      <footer className=" px-4 bg-white rounded-lg shadow m-6 dark:bg-black">
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-teal-700 sm:text-center dark:text-teal-700">
-            © 2023{" "}
-            <a
-              href="https://google.com/"
-              className="hover:underline font-semibold"
-            >
-              developedbymeor
-            </a>
-          </span>
-          <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-white sm:mt-0">
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
-                Licensing
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <ContactMe />
+      <Footer />
     </motion.div>
   );
 }

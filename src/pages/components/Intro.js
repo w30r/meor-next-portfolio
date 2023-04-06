@@ -17,25 +17,35 @@ function Intro() {
       </p>
       <button
         type="button"
-        class="text-white mt-6 mb-24 font-sans bg-teal-700 hover:bg-teal-800 focus:outline-none focus:ring-4  font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 dark:bg-teal-600 dark:hover:bg-teal-700 "
+        className="text-white mt-6 mb-24 font-sans bg-teal-700 hover:bg-teal-800 focus:outline-none focus:ring-4  font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 dark:bg-teal-600 dark:hover:bg-teal-700 "
       >
         Hire me!
       </button>
-      <svg
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1.5"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        className="w-6 h-6 mx-auto"
+      <motion.div
+        initial={{ y: 0 }}
+        animate={{ y: -10 }}
+        transition={{
+          duration: 0.5,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
-        ></path>
-      </svg>
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          className="w-6 h-6 mx-auto"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+          ></path>
+        </svg>
+      </motion.div>
     </div>
   );
 }
