@@ -7,12 +7,13 @@ function Intro() {
       <p className="text-gray-300 font-mono tracking-tighter text-center text-sm md:text-lg md:tracking-normal md:w-2/3 mx-auto leading-3">
         Welcome to my portfolio! As a{" "}
         <span className="text-teal-500 ">Computer Engineering</span> graduate
-        with a strong passion for software engineering, I'm driven to develop{" "}
+        with a strong passion for software engineering, I&apos;m driven to
+        develop{" "}
         <span className="text-teal-500 ">
           creative solutions for complex problems
         </span>{" "}
-        . I'm excited to apply my technical skills and innovation to real-world
-        challenges.
+        . I&apos;m excited to apply my technical skills and innovation to
+        real-world challenges.
       </p>
       <button
         type="button"
