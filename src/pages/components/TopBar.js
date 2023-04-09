@@ -15,7 +15,8 @@ function TopBar() {
         <ul className="flex items-center">
           <li>
             <SocialIcon
-              url="https://twitter.com/MeorSyamil"
+              url=""
+              network="twitter"
               bgColor="transparent"
               fgColor="grey"
               style={{ height: 30 }}
