@@ -7,7 +7,8 @@ import Intro from "./components/Intro";
 import Skills from "./components/Skills";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
-import CursorTracker from "./components/CursorTracker";
+import Projects from "./components/Projects";
+// import CursorTracker from "./components/CursorTracker";
 // import Sound from "react-sound";
 
 export default function Home() {
@@ -18,14 +19,14 @@ export default function Home() {
       animate={{ opacity: 1 }}
     >
       {/* <Sound */}
-        {/* url="mpfbgm.mp3" */}
-        {/* autoLoad={true} */}
-        {/* playStatus={Sound.status.PLAYING} */}
-        {/* playFromPosition={0 /* in milliseconds */} 
-        {/* loop={true} */}
-        {/* volume={50} */}
+      {/* url="mpfbgm.mp3" */}
+      {/* autoLoad={true} */}
+      {/* playStatus={Sound.status.PLAYING} */}
+      {/* playFromPosition={0 /* in milliseconds */}
+      {/* loop={true} */}
+      {/* volume={50} */}
       {/* /> */}
-      
+
       <html className="scroll-smooth">
         <Head>
           <title>developedbymeor</title>
@@ -67,10 +68,9 @@ export default function Home() {
           </section>
         </main>
       </html>
-
+      <Projects />
       <ContactMe />
       <Footer />
-      <CursorTracker />
     </motion.div>
   );
 }

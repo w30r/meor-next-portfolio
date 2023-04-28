@@ -9,7 +9,7 @@ function TopBar() {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
-        className="bg-gradient-to-b via-black from-black from-10% via-60% to-90% mb-2 py-6 border-gray-300 rounded-lg flex w-full  justify-around top-0 left-0 fixed z-10 items-center"
+        className="bg-gradient-to-b via-black from-black from-10% via-60% to-90% mb-2 py-6 border-gray-300 flex w-full  justify-around top-0 left-0 fixed z-10 items-center"
       >
         <h1 className="text-sm md:text-xl text-gray-400 ">developedbymeor</h1>
         <ul className="flex items-center">

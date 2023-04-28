@@ -23,9 +23,9 @@ function Tweets(props) {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </div>
@@ -33,18 +33,18 @@ function Tweets(props) {
       </div>
       <div id="midTwtaTwt" className="w-full ">
         <div id="tweetAuthor" className="flex items-center">
-          <a className="font-semibold">{props.user}</a>
+          <a className="font-semibold">{props.twthandle}</a>
           <VerifiedIcon
             style={{ fontSize: 18 }}
             className="text-[#1d9bf0] ml-1"
           />
           <a className="font-light text-white/60 text-sm ml-1">
-            {props.username}
+            {props.twtusername}
           </a>
           <a className="font-light ml-2 text-xs text-white/60">8m</a>
         </div>
         <div id="tweetContent">
-          <a>{props.tweetContent}</a>
+          <a>{props.twtContent}</a>
         </div>
         <TweetActions />
       </div>

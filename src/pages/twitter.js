@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import TagRoundedIcon from "@mui/icons-material/TagRounded";
@@ -49,7 +49,7 @@ function twitter() {
       numberOfTweets: 432411,
     },
     {
-      title: "Madey",
+      title: "Riot",
       category: "Music",
       numberOfTweets: 4321231,
     },
@@ -95,7 +95,7 @@ function twitter() {
     </div>
   ));
 
-  const tweets = [
+  let tweetsArr = [
     {
       twthandle: "faris",
       twtusername: "frsnhzn",
@@ -114,8 +114,8 @@ function twitter() {
     },
   ];
 
-  const TweetList = tweets.map((tweet, index) => (
-    <Tweets key={index} tweetContent={tweet.twtContent} />
+  let TweetList = tweetsArr.map((x, index) => (
+    <Tweets user={x.user} username={x.username} tweetContent={x.tweetContent} />
   ));
 
   return (
@@ -185,9 +185,9 @@ function twitter() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </div>
@@ -220,9 +220,9 @@ function twitter() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </div>
@@ -265,6 +265,8 @@ function twitter() {
                   id="tweetbuttoncompose"
                   type="button"
                   className="text-white bg-[#1DA1F2] w-full hover:bg-[#1DA1F2] focus:outline-none outline-none focus:ring-4 focus:ring-[#1DA1F2] font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-[#1DA1F2] dark:hover:bg-[#1DA1F2]/80 transition-colors duration-1000 dark:focus:ring-blue-800"
+                  // onClick={() => alert("Hey")}
+                  // onClick={}
                 >
                   Tweet
                 </button>
@@ -275,15 +277,14 @@ function twitter() {
         {/* TWEETS HERE! */}
         {/* <TweetList /> */}
         <Tweets
-          tweetContent={"Hey heyhey"}
-          user={"Meor"}
-          username={"@meorsyamil"}
+          twtContent={"Hey heyhey"}
+          twthandle={"Meor"}
+          twtusername={"@meorsyamil"}
         />
-        <Tweets tweetContent={"hi meor"} user={"Faris"} username={"@frsnzhn"} />
         <Tweets
-          tweetContent={"askdjaklsjd"}
-          user={"Faris"}
-          username={"@frsnzhn"}
+          twtContent={"askdjaklsjd"}
+          twthandle={"Faris"}
+          twtusername={"@frsnzhn"}
         />
       </div>
       {/* Right SECTION */}
