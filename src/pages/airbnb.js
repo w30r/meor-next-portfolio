@@ -21,7 +21,7 @@ import { useRouter } from "next/router";
 function airbnb() {
   const Router = useRouter();
 
-  function handleClickBNBs() {
+  function usehandleClickBNBs() {
     Router.push("/airbnbb");
   }
 
@@ -463,7 +463,7 @@ function airbnb() {
               width={800}
               height={800}
               className="w-[280px] h-[260px] rounded-xl hover:shadow-lg duration-300 hover:shadow-black/50"
-              onClick={handleClickBNBs}
+              onClick={usehandleClickBNBs}
             />
             <div className="mt-2 text-sm">
               <div className="flex justify-between">
