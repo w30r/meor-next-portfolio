@@ -19,10 +19,10 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { useRouter } from "next/router";
 
 function airbnb() {
-  const router = useRouter();
+  const Router = useRouter();
 
   function handleClickBNBs() {
-    router.push("/airbnbb");
+    Router.push("/airbnbb");
   }
 
   const pics = [
