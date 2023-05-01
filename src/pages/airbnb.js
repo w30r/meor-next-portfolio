@@ -425,7 +425,10 @@ function airbnb() {
           </div>
         ))}
       </div>
-      <div id="BNBS" className="py-6 px-6 flex flex-wrap gap-4 justify-center text-black">
+      <div
+        id="BNBS"
+        className="py-6 px-6 flex flex-wrap gap-4 justify-center text-black"
+      >
         <div>
           <FavoriteTwoToneIcon className="absolute z-50 m-4 cursor-pointer" />
           <Image
@@ -455,7 +458,6 @@ function airbnb() {
         </div>
         {bnbs.map((x, index) => (
           <div key={index}>
-            {console.log(index)}
             <FavoriteTwoToneIcon className="absolute z-50 m-4 cursor-pointer" />
             <Image
               src={x.img.toString()}
