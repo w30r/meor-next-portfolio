@@ -18,7 +18,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { useRouter } from "next/router";
 
-function airbnb() {
+function Airbnb() {
   const Router = useRouter();
 
   function usehandleClickBNBs() {
@@ -489,4 +489,4 @@ function airbnb() {
   );
 }
 
-export default airbnb;
+export default Airbnb;
