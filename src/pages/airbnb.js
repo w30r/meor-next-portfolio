@@ -19,8 +19,6 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { useRouter } from "next/router";
 
 function airbnb() {
-  const [i, setI] = useState(0);
-
   const router = useRouter();
 
   function handleClickBNBs() {
