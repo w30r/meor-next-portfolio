@@ -382,7 +382,7 @@ function Airbnb() {
               alt="avatar"
               className="w-[30px] h-[30px] rounded-full"
             />
-            <span class="top-3 right-7 absolute  w-3 h-3 bg-red-500 border-2 border-white dark:border-gray-200 rounded-full"></span>
+            <span className="top-3 right-7 absolute  w-3 h-3 bg-red-500 border-2 border-white dark:border-gray-200 rounded-full"></span>
           </div>
         </div>
       </div>

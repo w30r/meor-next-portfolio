@@ -16,7 +16,7 @@ export default function Home() {
       transition={{ duration: 2 }}
       animate={{ opacity: 1 }}
     >
-      <html className="scroll-smooth">
+      <div className="scroll-smooth">
         <Head>
           <title>developedbymeor</title>
           <meta name="description" content="Created by meor" />
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
           </section>
         </main>
-      </html>
+      </div>
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
