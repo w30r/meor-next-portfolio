@@ -115,7 +115,12 @@ function twitter() {
   ];
 
   let TweetList = tweetsArr.map((x, index) => (
-    <Tweets user={x.user} username={x.username} tweetContent={x.tweetContent} />
+    <Tweets
+      key={index}
+      user={x.user}
+      username={x.username}
+      tweetContent={x.tweetContent}
+    />
   ));
 
   return (
