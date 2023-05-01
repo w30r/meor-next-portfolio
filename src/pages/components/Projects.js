@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Projects() {
@@ -19,12 +20,12 @@ function Projects() {
             height={1080}
             className="w-[800px] h-[450px] rounded-[20px] border-4 border-teal-600/50 hover:shadow-lg shadow-teal-600/70 hover:border-teal-600/90 duration-150  "
           />
-          <a
+          <Link
             href="/airbnb"
             className="bg-teal-600/20 text-white hover:bg-teal-600/40 duration-150 font-semibold border-[1px] border-teal-600/50 p-4 mt-4 rounded-xl"
           >
             Check out AirBNB clone
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col items-center">
           <h1 className="font-semibold mb-2 underline text-2xl">
@@ -37,12 +38,12 @@ function Projects() {
             height={1080}
             className="w-[800px] h-[450px] rounded-[20px] border-4 border-teal-600/50 hover:shadow-lg shadow-teal-600/70 hover:border-teal-600/90 duration-150  "
           />
-          <a
+          <Link
             href="/twitter"
             className="bg-teal-600/20 text-white hover:bg-teal-600/40 duration-150 font-semibold border-[1px] border-teal-600/50 p-4 mt-4 rounded-xl"
           >
             Check out Twitter clone
-          </a>
+          </Link>
         </div>
       </div>
     </div>
