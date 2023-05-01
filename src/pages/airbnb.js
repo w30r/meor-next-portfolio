@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
 import ForestOutlinedIcon from "@mui/icons-material/ForestOutlined";
