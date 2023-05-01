@@ -57,7 +57,14 @@ export default function Home() {
           </section>
         </main>
       </html>
-      <Projects />
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: false }}
+      >
+        <Projects />
+      </motion.div>
       <ContactMe />
       <Footer />
     </motion.div>
