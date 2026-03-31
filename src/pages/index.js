@@ -28,7 +28,7 @@ export default function Home() {
             <TopBar />
             <ProfilePic />
             <div className="text-center flex items-center flex-col mt-6">
-              <h1 className="text-xs md:text-lg">My name is</h1>
+              {/* <h1 className="text-xs md:text-lg">My name is</h1> */}
               <motion.h1
                 className="text-teal-500 md:text-6xl text-4xl"
                 initial={{ opacity: 0, y: -10 }}
@@ -38,7 +38,7 @@ export default function Home() {
               >
                 <TypeAnimation
                   sequence={[
-                    "Meor :)", // Types 'One'
+                    "Meor :)", // Types 'O ne'
                     1000, // Waits 1s
                     "Syamil!", // Deletes 'One' and types 'Two'
                     1000, // Waits 2s
@@ -49,7 +49,8 @@ export default function Home() {
                 />
               </motion.h1>
               <h3 className="md:text-lg text-sm font-medium py-4 leading-none md:leading-none">
-                Computer Engineer Graduate <p>Future Developer/Designer</p>
+                Software Engineer & Automation Specialist{" "}
+                <p className="text-md"></p>
               </h3>
               <Intro />
               <Skills />

@@ -1,140 +1,124 @@
 import React from "react";
+import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import StorageRoundedIcon from "@mui/icons-material/StorageRounded";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import SettingsInputComponentIcon from "@mui/icons-material/SettingsInputComponent";
 import CloudQueueIcon from "@mui/icons-material/CloudQueue";
-import { motion } from "framer-motion";
+
+const skillData = [
+  {
+    title: "UI/UX Orchestration",
+    icon: <SmartphoneIcon className="text-teal-500 mb-2" />,
+    description: (
+      <>
+        Bridging high-fidelity design with performant code. Expert in
+        <span className="text-teal-500 font-semibold">
+          {" "}
+          Figma-to-React
+        </span>{" "}
+        workflows and creating seamless, user-centric interfaces.
+      </>
+    ),
+  },
+  {
+    title: "Enterprise Data Architecture",
+    icon: <StorageRoundedIcon className="text-teal-500 mb-2" />,
+    description: (
+      <>
+        Architecting robust data pipelines and managing mission-critical
+        databases in the
+        <span className="text-teal-500 font-semibold"> Energy Sector</span>,
+        ensuring 99.9% data integrity and high availability.
+      </>
+    ),
+  },
+  {
+    title: "Automation & IoT",
+    icon: <SettingsInputComponentIcon className="text-teal-500 mb-2" />,
+    description: (
+      <>
+        Integrating hardware and software via{" "}
+        <span className="text-teal-500 font-semibold">ESP32/Arduino</span>.
+        Specializing in custom firmware and automated monitoring systems.
+      </>
+    ),
+  },
+  {
+    title: "Cloud Infrastructure",
+    icon: <CloudQueueIcon className="text-teal-500 mb-2" />,
+    description: (
+      <>
+        Implementing scalable cloud storage and real-time protocols. Proficient
+        in
+        <span className="text-teal-500 font-semibold">
+          {" "}
+          Docker, Vercel,
+        </span>{" "}
+        and event-driven application architecture.
+      </>
+    ),
+  },
+  {
+    title: "Full-Stack Development",
+    icon: <LanguageOutlinedIcon className="text-teal-500 mb-2" />,
+    description: (
+      <>
+        Building modern, SEO-optimized web apps using
+        <span className="text-teal-500 font-semibold">
+          {" "}
+          React, Next.js, and TypeScript
+        </span>
+        . Focused on type-safety and rapid feature deployment.
+      </>
+    ),
+  },
+  {
+    title: "DevOps & Collaboration",
+    icon: <GitHubIcon className="text-teal-500 mb-2" />,
+    description: (
+      <>
+        Mastery of Git workflows and{" "}
+        <span className="text-teal-500 font-semibold">CI/CD pipelines</span>.
+        Ensuring seamless team collaboration through structured branching and
+        automated testing.
+      </>
+    ),
+  },
+];
 
 function Skills() {
   return (
-    <div id="skillset" className="bg-teal-900 w-screen m-6 py-4">
-      <h1 className="mt-4 mb-6 text-xl font-semibold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl dark:text-white">
-        Skillset
-      </h1>
-      <div className="font-semibold text-xs md:grid md:grid-cols-2">
-        <motion.a
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false }}
-          whileHover={{ scale: 1.05 }}
-          href="#skillset"
-          className="w-2/3 mx-auto block shadow-sm max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-xl hover:bg-gray-100 dark:bg-black dark:border-gray-700 dark:hover:bg-gray-700"
-        >
-          <SmartphoneIcon />
-          <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-            App Design
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            I possess app design experience that can be valuable to our digital
-            projects and contribute to their success in{" "}
-            <span className="text-teal-500 font-semibold">UI/UX</span>.
-          </p>
-        </motion.a>
+    <div id="skillset" className="bg-black w-full py-16 px-4">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="mb-12 text-center text-3xl font-bold tracking-tight text-white md:text-5xl">
+          Technical <span className="text-teal-500">Skillset</span>
+        </h1>
 
-        <motion.a
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false }}
-          whileHover={{ scale: 1.05 }}
-          href="#skillset"
-          className="w-2/3 mx-auto block shadow-sm max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-xl hover:bg-gray-100 dark:bg-black dark:border-gray-700 dark:hover:bg-gray-700"
-        >
-          <StorageRoundedIcon />
-          <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-            Data Engineering
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Experience in architecting robust data pipelines and managing
-            enterprise-level databases in the energy sector, ensuring high
-            availability and data integrity.
-          </p>
-        </motion.a>
-
-        <motion.a
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false }}
-          whileHover={{ scale: 1.05 }}
-          href="#skillset"
-          className="w-2/3 mx-auto block shadow-sm max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-xl hover:bg-gray-100 dark:bg-black dark:border-gray-700 dark:hover:bg-gray-700"
-        >
-          <SettingsInputComponentIcon />
-          <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-            IoT & Mechatronics
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Bridging the gap between software and hardware through DIY
-            electronics, mechatronics, and custom firmware development for
-            automation projects.
-          </p>
-        </motion.a>
-
-        <motion.a
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false }}
-          whileHover={{ scale: 1.05 }}
-          href="#skillset"
-          className="w-2/3 mx-auto block shadow-sm max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-xl hover:bg-gray-100 dark:bg-black dark:border-gray-700 dark:hover:bg-gray-700"
-        >
-          <CloudQueueIcon />
-          <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-            Cloud & Storage
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Implementing scalable cloud storage solutions and real-time
-            communication protocols to build high-performance, event-driven
-            applications.
-          </p>
-        </motion.a>
-
-        <motion.a
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false }}
-          whileHover={{ scale: 1.05 }}
-          href="google.com"
-          className="w-2/3 mx-auto  block shadow-sm max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-xl hover:bg-gray-100 dark:bg-black dark:border-gray-700 dark:hover:bg-gray-700"
-        >
-          <LanguageOutlinedIcon />
-          <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-            Web Development
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            I have experience in web development with{" "}
-            <span className="text-teal-500 font-semibold">
-              ReactJS, NextJS, and TailwindCSS
-            </span>
-            , specializing in building user-friendly and responsive interfaces.
-          </p>
-        </motion.a>
-        <motion.a
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: false }}
-          whileHover={{ scale: 1.05 }}
-          href="#skillset"
-          className=" w-2/3 mx-auto block shadow-md max-w-sm p-6 m-2 bg-white border border-gray-200 rounded-xl hover:bg-gray-100 dark:bg-black dark:border-gray-700 dark:hover:bg-gray-700"
-        >
-          <GitHubIcon />
-          <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-            Git-Version Control
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            I have experience using Git for{" "}
-            <span className="text-teal-500 font-semibold">version control</span>{" "}
-            in collaborative projects, allowing for easy tracking and management
-            of code changes.
-          </p>
-        </motion.a>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillData.map((skill, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.03, translateY: -5 }}
+              className="p-8 bg-black border border-gray-800 rounded-2xl shadow-xl hover:border-teal-500/50 transition-colors duration-300 group"
+            >
+              <div className="group-hover:scale-110 transition-transform duration-300">
+                {skill.icon}
+              </div>
+              <h5 className="mb-3 text-xl font-bold tracking-tight text-white group-hover:text-teal-400">
+                {skill.title}
+              </h5>
+              <p className="font-normal text-gray-400 leading-relaxed text-sm">
+                {skill.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );
