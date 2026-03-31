@@ -28,7 +28,7 @@ export default function Home() {
             <TopBar />
             <ProfilePic />
             <div className="text-center flex items-center flex-col mt-6">
-              <h1 className="text-xs md:text-lg">My name is what</h1>
+              <h1 className="text-xs md:text-lg">My name is</h1>
               <motion.h1
                 className="text-teal-500 md:text-6xl text-4xl"
                 initial={{ opacity: 0, y: -10 }}
