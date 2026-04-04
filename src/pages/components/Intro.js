@@ -1,40 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  SiReact,
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiMongodb,
-  SiNodedotjs,
-  SiVercel,
-  SiGithubactions,
-  SiPython,
-  SiArduino,
-  SiDocker,
   SiPostman,
-  SiExpress,
-  SiFigma,
-  SiFramer,
+  SiTypescript,
 } from "react-icons/si";
 
 function Intro() {
   const techLogos = [
-    { node: <SiNextdotjs size={48} />, title: "Next.js" },
-    { node: <SiReact size={48} />, title: "React" },
+    { node: <SiPostman size={48} />, title: "Postman" },
     { node: <SiTypescript size={48} />, title: "TypeScript" },
-    { node: <SiTailwindcss size={48} />, title: "Tailwind" },
-    { node: <SiNodedotjs size={48} />, title: "Node.js" },
-    { node: <SiExpress size={48} />, title: "Express" },
-    { node: <SiMongodb size={48} />, title: "MongoDB" },
-    { node: <SiPython size={48} />, title: "Python" }, // The Data Engineer core
-    { node: <SiArduino size={48} />, title: "Arduino" }, // The IoT/Automation edge
-    { node: <SiDocker size={48} />, title: "Docker" }, // The "Senior" infrastructure
-    { node: <SiGithubactions size={48} />, title: "CI/CD" },
-    { node: <SiVercel size={48} />, title: "Vercel" },
-    { node: <SiPostman size={48} />, title: "API Testing" },
-    { node: <SiFigma size={48} />, title: "Design" },
-    { node: <SiFramer size={48} />, title: "Framer Motion" },
   ];
 
   // We duplicate the list to ensure there's always content filling the screen
