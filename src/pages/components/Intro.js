@@ -3,12 +3,38 @@ import { motion } from "framer-motion";
 import {
   SiPostman,
   SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiNodedotjs,
+  SiVercel,
+  SiGithubactions,
+  SiPython,
+  SiArduino,
+  SiDocker,
+  SiExpress,
+  SiFigma,
+  SiFramer,
 } from "react-icons/si";
 
 function Intro() {
   const techLogos = [
     { node: <SiPostman size={48} />, title: "Postman" },
     { node: <SiTypescript size={48} />, title: "TypeScript" },
+    { node: <SiReact size={48} />, title: "React" },
+    { node: <SiNextdotjs size={48} />, title: "Next.js" },
+    { node: <SiTailwindcss size={48} />, title: "Tailwind CSS" },
+    { node: <SiMongodb size={48} />, title: "MongoDB" },
+    { node: <SiNodedotjs size={48} />, title: "Node.js" },
+    { node: <SiVercel size={48} />, title: "Vercel" },
+    { node: <SiGithubactions size={48} />, title: "GitHub Actions" },
+    { node: <SiPython size={48} />, title: "Python" },
+    { node: <SiArduino size={48} />, title: "Arduino" },
+    { node: <SiDocker size={48} />, title: "Docker" },
+    { node: <SiExpress size={48} />, title: "Express" },
+    { node: <SiFigma size={48} />, title: "Figma" },
+    { node: <SiFramer size={48} />, title: "Framer" },
   ];
 
   // We duplicate the list to ensure there's always content filling the screen
