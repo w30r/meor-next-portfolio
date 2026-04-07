@@ -7,7 +7,7 @@ const projectList = [
   {
     title: "MeoARC (Enterprise)",
     videoSrc:
-      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6OapvwnbRWxrmHMZfkoITs8qQazU3WgRS1FJOwP",
+      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6OamUVoGrPsI9ghATua14jvL85qPif2b7UBENDO",
     link: "/projects/meoarc",
     desc: "A mission-critical asset registration system designed for high-scale industrial data. Engineered to solve a 90% data duplication issue for 500+ enterprise users.",
     tags: ["Next.js", "MongoDB", "Automation", "Enterprise"],
