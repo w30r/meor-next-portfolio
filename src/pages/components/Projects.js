@@ -13,7 +13,7 @@ const projectList = [
     tags: ["Next.js", "MongoDB", "Automation", "Enterprise"],
   },
   {
-    title: "MeoFalk Live",
+    title: "Syncro",
     videoSrc:
       "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6OapvwnbRWxrmHMZfkoITs8qQazU3WgRS1FJOwP",
     link: "/projects/meofalk",
