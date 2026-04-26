@@ -13,12 +13,12 @@ const projectList = [
     tags: ["Next.js", "MongoDB", "Automation", "Enterprise"],
   },
   {
-    title: "Syncro",
+    title: "MeorFitnessPal",
     videoSrc:
-      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6OapvwnbRWxrmHMZfkoITs8qQazU3WgRS1FJOwP",
-    link: "/projects/meofalk",
-    desc: "Real-time remix submission dashboard utilizing WebSockets for instant updates and S3 cloud storage for high-availability media management.",
-    tags: ["React", "Node.js", "WebSockets", "AWS S3"],
+      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6Oab1D7BW4VRSixg9lCymcOdz1rp0Ls5Bn2DYjT", // Update with your actual asset link
+    link: "/projects/meorfitnesspal",
+    desc: "A comprehensive health suite featuring automated macro-tracking, dynamic workout logging, and progress visualization powered by high-performance data indexing.",
+    tags: ["React", "Express", "MongoDB", "Node.js", "Cloud Storage"],
   },
   {
     title: "Nathaleo Sync",
