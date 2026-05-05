@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import Timeline from "./components/Timeline";
 
 export default function Home() {
   return (
@@ -58,6 +59,7 @@ export default function Home() {
           </section>
         </main>
       </div>
+      <Timeline />
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}

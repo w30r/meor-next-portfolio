@@ -56,12 +56,26 @@ function Intro() {
           systems that solve real-world business bottlenecks :)
         </p>
 
-        <button
-          type="button"
-          className="text-white mt-4 mb-24 font-sans hover:scale-105 transition-all duration-150 bg-teal-600 hover:bg-teal-700 font-medium rounded-full text-sm px-8 py-4"
-        >
-          Let's build together!
-        </button>
+        <div className="flex flex-wrap justify-center gap-4 mt-4 mb-24">
+          <a
+            href="#experience"
+            className="text-white font-sans hover:scale-105 transition-all duration-150 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 font-medium rounded-full text-sm px-6 py-3"
+          >
+            Experience
+          </a>
+          <a
+            href="#projects"
+            className="text-white font-sans hover:scale-105 transition-all duration-150 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 font-medium rounded-full text-sm px-6 py-3"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="text-white font-sans hover:scale-105 transition-all duration-150 bg-teal-600 hover:bg-teal-700 font-medium rounded-full text-sm px-6 py-3"
+          >
+            Contact
+          </a>
+        </div>
       </div>
 
       <div className="relative w-full overflow-hidden h-32 flex items-center">
