@@ -44,13 +44,13 @@ function Intro() {
     <div className="flex flex-col items-center w-full bg-black">
       {/* Bio Section */}
       <div className="px-6 text-center">
-        <p className="text-gray-300 font-mono text-center py-12 text-sm md:text-lg md:w-2/3 mx-auto leading-relaxed">
-          I specialize in building{" "}
+        <p className="text-gray-300 font-mono text-center py-12 text-sm md:text-lg md:w-1/4 mx-auto leading-relaxed">
+          Specialized in building{" "}
           <span className="text-teal-500 font-bold">
             0-to-1 full-stack applications
           </span>{" "}
           and automating complex enterprise workflows. With a foundation in
-          Hardcore Engineering from{" "}
+          Data Engineering from{" "}
           <span className="text-teal-500 font-bold">PETRONAS</span> <br />
           <br />I don't just write code. <br />I architect scalable, data-driven
           systems that solve real-world business bottlenecks :)
