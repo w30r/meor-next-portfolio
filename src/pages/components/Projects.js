@@ -1,29 +1,43 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 
-const projectList = [
+const featuredProjects = [
+  {
+    title: "Envoice.my",
+    videoSrc:
+      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6OauY31OdgGUVSBXOa8ZRj9bM1z07kcJYmD6qNi",
+    link: "/projects/envoice",
+    desc: "A comprehensive e-invoicing solution fully compliant with LHDN (Malaysian Inland Revenue Board) requirements. Automates invoice generation, validation, and submission to the MyInvois portal, streamlining tax compliance for businesses of all sizes.",
+    tags: ["Next.js", "MongoDB", "LHDN", "E-Invoice", "MyInvois"],
+  },
+  {
+    title: "MeorFitnessPal",
+    videoSrc:
+      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6Oab1D7BW4VRSixg9lCymcOdz1rp0Ls5Bn2DYjT",
+    link: "/projects/meorfitnesspal",
+    desc: "A comprehensive health suite featuring automated macro-tracking, dynamic workout logging, and progress visualization. Now enhanced with AI-powered meal recommendations and smart workout optimization based on user history and goals.",
+    tags: ["React", "Express", "MongoDB", "Node.js", "AI/ML", "Cloud Storage"],
+  },
+  {
+    title: "KTANE Clone",
+    videoSrc:
+      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6OahCKXwID7nHveNijwGtDz8XJa0uQqAY9EkCof",
+    link: "/projects/ktane",
+    desc: 'A browser-based recreation of "Keep Talking and Nobody Explodes" — a frantic party puzzle game where one player defuses a bomb while others decipher the manual. Features randomized modules, authentic wire-cutting logic, and real-time pressure.',
+    tags: ["React", "Next.js", "Game Dev", "Puzzle", "Multiplayer"],
+  },
+];
+
+const otherProjects = [
   {
     title: "MeoARC (Enterprise)",
-    videoSrc:
-      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6OamUVoGrPsI9ghATua14jvL85qPif2b7UBENDO",
     link: "/projects/meoarc",
     desc: "A mission-critical asset registration system designed for high-scale industrial data. Engineered to solve a 90% data duplication issue for 500+ enterprise users.",
     tags: ["Next.js", "MongoDB", "Automation", "Enterprise"],
   },
   {
-    title: "MeorFitnessPal",
-    videoSrc:
-      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6Oab1D7BW4VRSixg9lCymcOdz1rp0Ls5Bn2DYjT", // Update with your actual asset link
-    link: "/projects/meorfitnesspal",
-    desc: "A comprehensive health suite featuring automated macro-tracking, dynamic workout logging, and progress visualization powered by high-performance data indexing.",
-    tags: ["React", "Express", "MongoDB", "Node.js", "Cloud Storage"],
-  },
-  {
     title: "Nathaleo Sync",
-    videoSrc:
-      "https://4pmllzkk3e.ufs.sh/f/80lTYgNxh6OaFZHDRahiyD28X6GdzrPvcoSEsT517VZNMpFt",
     link: "/projects/nathaleo",
     desc: "Mobile-first movie discovery platform featuring swipe-based logic and TMDB API integration. Built for seamless real-time synchronization between users.",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "API"],
@@ -43,7 +57,7 @@ function Projects() {
         </p>
 
         <div className="flex flex-col gap-32 items-center">
-          {projectList.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -52,7 +66,6 @@ function Projects() {
               viewport={{ once: true }}
               className="flex flex-col items-center group w-full"
             >
-              {/* Project Title & Tech Tags */}
               <div className="text-center mb-8">
                 <h2 className="font-bold text-2xl md:text-4xl text-white mb-4 group-hover:text-teal-400 transition-colors">
                   {project.title}
@@ -69,7 +82,6 @@ function Projects() {
                 </div>
               </div>
 
-              {/* Video/Image Container */}
               <div className="relative w-full aspect-video overflow-hidden rounded-2xl border border-zinc-800 group-hover:border-teal-500/30 transition-all duration-500 shadow-2xl">
                 {project.videoSrc ? (
                   <video
@@ -82,16 +94,17 @@ function Projects() {
                     <source src={project.videoSrc} type="video/mp4" />
                   </video>
                 ) : (
-                  <Image
-                    src={project.src || "/placeholder.png"}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-105 duration-700"
-                  />
+                  <div className="w-full h-full bg-gradient-to-br from-zinc-900 via-zinc-800 to-teal-900/40 flex items-center justify-center">
+                    <div className="text-center p-8">
+                      <div className="text-6xl mb-4 opacity-30">🎮</div>
+                      <p className="text-zinc-600 text-sm uppercase tracking-widest">
+                        Preview Coming Soon
+                      </p>
+                    </div>
+                  </div>
                 )}
               </div>
 
-              {/* Description & Link */}
               <div className="mt-10 text-center max-w-2xl">
                 <p className="text-zinc-400 text-base md:text-lg leading-relaxed mb-8">
                   {project.desc}
@@ -106,6 +119,54 @@ function Projects() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Other Projects */}
+        <div className="mt-32">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-400 md:text-3xl">
+              Other <span className="text-zinc-500">Projects</span>
+            </h2>
+            <div className="w-12 h-px bg-zinc-800 mx-auto mt-4" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {otherProjects.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="group bg-zinc-900/30 border border-zinc-800 rounded-xl p-6 hover:border-zinc-700 transition-all duration-300"
+              >
+                <div className="flex flex-col h-full">
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {project.tags.map((tag, tIndex) => (
+                      <span
+                        key={tIndex}
+                        className="px-2 py-0.5 text-[9px] uppercase tracking-widest bg-zinc-800 border border-zinc-700 text-teal-500/70 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <h3 className="font-bold text-lg text-white mb-2 group-hover:text-teal-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-zinc-500 text-sm leading-relaxed mb-6 flex-grow">
+                    {project.desc}
+                  </p>
+                  <Link
+                    href={project.link}
+                    className="inline-flex items-center text-teal-500 text-xs uppercase tracking-[0.15em] hover:text-white transition-colors"
+                  >
+                    View Project &rarr;
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
